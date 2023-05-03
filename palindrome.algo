@@ -1,0 +1,13 @@
+FUNCTION palindrome(word:STRING) :BOOLEAN
+BEGIN
+     if word.length <=1 then
+        RETURN true ;
+    end_if
+
+    if word[0] = word[word.length-1] then
+         return palindrome substring (word,1,word.lenght-1)
+    
+        ELSE
+            return false
+    END_IF  
+END
